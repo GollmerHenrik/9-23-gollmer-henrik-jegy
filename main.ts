@@ -1,8 +1,9 @@
 let jegy = 0
+input.onButtonPressed(Button.A, function () {
+    jegy = randint(0, 5)
+})
 basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        jegy = randint(0, 5)
-    }
+	
 })
 basic.forever(function () {
     if (jegy == 1) {
