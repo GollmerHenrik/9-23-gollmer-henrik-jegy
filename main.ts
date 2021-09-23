@@ -1,7 +1,7 @@
 let jegy = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
-        jegy = randint(0, 5)
+        jegy = randint(1, 5)
     }
 })
 basic.forever(function () {
