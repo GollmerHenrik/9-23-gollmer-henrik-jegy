@@ -1,57 +1,49 @@
-let dobás = 0
+let jegy = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
-        dobás = randint(0, 6)
+        jegy = randint(0, 5)
     }
 })
 basic.forever(function () {
-    if (dobás == 1) {
+    if (jegy == 1) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
             . . # . .
-            . . . . .
-            . . . . .
-            `)
-    } else if (dobás == 2) {
-        basic.showLeds(`
-            # . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . #
-            `)
-    } else if (dobás == 3) {
-        basic.showLeds(`
-            # . . . .
-            . . . . .
+            . # # . .
+            # . # . .
             . . # . .
-            . . . . .
-            . . . . #
-            `)
-    } else if (dobás == 4) {
-        basic.showLeds(`
-            # . . . #
-            . . . . .
-            . . . . .
-            . . . . .
-            # . . . #
-            `)
-    } else if (dobás == 5) {
-        basic.showLeds(`
-            # . . . #
-            . . . . .
             . . # . .
-            . . . . .
-            # . . . #
             `)
-    } else if (dobás == 6) {
+    } else if (jegy == 2) {
         basic.showLeds(`
-            . # . # .
-            . . . . .
-            . # . # .
-            . . . . .
-            . # . # .
+            . # # . .
+            # . . # .
+            . . # . .
+            . # . . .
+            # # # # .
+            `)
+    } else if (jegy == 3) {
+        basic.showLeds(`
+            . # # . .
+            # . . # .
+            . . # . .
+            # . . # .
+            . # # . .
+            `)
+    } else if (jegy == 4) {
+        basic.showLeds(`
+            # . # . .
+            # . # . .
+            # # # . .
+            . . # . .
+            . . # . .
+            `)
+    } else if (jegy == 5) {
+        basic.showLeds(`
+            . # # # .
+            . # . . .
+            . # # # .
+            . . . # .
+            . # # # .
             `)
     }
 })
